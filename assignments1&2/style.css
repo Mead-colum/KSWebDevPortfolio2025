@@ -1,0 +1,8 @@
+body {background-color:black; font-family: Arial; width:800px;margin:auto;}
+header {padding: 25px;}
+main{background-color:rgba(92, 90, 89, 0.1); padding: 25px;}
+p {color: white; background-color:rgba(0,255,255,.3); padding:15px; border-radius: 5px; border: 2px solid rgba(75, 0, 196, 0.76); font-family: monospace;}
+h1 {color: rgb(255, 140, 0);}
+h2 {color: rgb(0, 255, 255);}
+h4 {color: rgb(255, 140, 0);}
+footer {color: rgb(2, 51, 2);}

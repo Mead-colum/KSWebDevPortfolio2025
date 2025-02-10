@@ -15,13 +15,60 @@ html {
 
 
 body {
+	background-color: rgb(12, 80, 59);
+	color: rgb(82, 170, 170);
+	font-family: Arial, Helvetica, sans-serif;
 	
 	
 }
 
+nav ul{
+	list-style: none;
+	padding-left: 0px;
+}
+
+nav li{
+	display: inline;
+	margin:5px;
+	
+
+}
+
+nav a {
+	color: rgb(50, 170, 179);
+	text-decoration: none;
+	font-size: 1.25em;
+	display: inline-block;
+	background-color: rgba(88, 52, 52, 0.562);
+	padding: 5px;
+	border-radius: 5px;
+}
+
+nav a:hover {
+	display: inline-block;
+	color: white;
+	background-color: brown;
+	padding: 6px;
+}
+
+figure img{
+	
+}
+
+h1,h2{
+	font-family: Impact, 'Arial Narrow Bold', sans-serif;
+}
+
+figcaption, footer{
+	font-size: 0.75em;
+}
 
 #container {
-	
+	padding:20px;
+	width:800px;
+	max-width: 800px;
+	margin:auto;
+background-color: rgb(27, 54, 45);	
 }
 
 
