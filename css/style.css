@@ -22,6 +22,14 @@ body {
 	
 }
 
+p{
+	
+	border-radius: 5px ;
+	text-align: center;
+	
+}
+
+
 nav ul{
 	list-style: none;
 	padding-left: 0px;
@@ -30,7 +38,6 @@ nav ul{
 nav li{
 	display: inline;
 	margin:5px;
-	
 
 }
 
@@ -51,18 +58,36 @@ nav a:hover {
 	padding: 6px;
 }
 
+
+
+
+
 figure img{
-	width: 100%;
+	
 	height: 600px;
+	width: 100%;
+	
 }
+
+
 
 h1,h2{
 	font-family: Impact, 'Arial Narrow Bold', sans-serif;
-}
+} 
 
 figcaption, footer{
-	font-size: 0.75em;
+	font-size: 0.75em;	
+	text-align: center;
+	
 }
+
+footer em, figcaption em {
+	background:rgb(20, 43, 35);
+	padding: 7px;
+	border-radius: 15px;
+	
+}
+
 
 #container {
 	padding:20px;
