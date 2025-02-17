@@ -1,1 +1,1 @@
-# KSWebDevPorfolio2025
+# KSWebDevPortfolio2025, in it for the long run
