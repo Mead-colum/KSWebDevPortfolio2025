@@ -54,13 +54,14 @@ body {
 
 
 .My{
-	font-size: 100px;
-	font-family: "Sigmar", "serif";
+	font-size: 170px;
+	font-family: "danfo", "serif";
+	color: #008223;
 }
 
 .Biggest{
 	
-	font-size: 150px;
+	font-size: 301px;
 	font-family: "Sigmar", "serif";
 }
 
@@ -68,42 +69,61 @@ body {
 	position: relative;
 	right: 250px;
 	rotate: -45deg;
-	background-color: #21fc99;
+	font-family: "danfo","serif";
+	color: #026b1e;
+	
 }
 
 .gest{
-	position: absolute;
+	position: absolute ;
 	right:180px;
-	top: 60%;
+	top: 70%;
 	rotate: 90deg;
-	background-color: #21fc99;
+	font-family: "Black Ops One", serif;
+	color: #015c19;
 }
 
 
 .Fan {
 	position: absolute;
-	right: 50%;
-	font-size: 200px;
+	
+	top: 65%;
+	font-size: 300px;
 	font-family: "Black Ops One", serif;
+	color: #75ff9a;
 }
 
 .F{
 	position: absolute;
-	bottom: 15px;
+	right: 50px;
+	bottom: 100px;
 	rotate: -20deg;
 	
 }
 
 .A{
 	position: absolute;
-	top: 2px;
+	top: 250px;
 	rotate: 315deg;
 	left: 25px;
 }
 
 .N{
 	position: absolute;
-	top: 2px;
+	top: 250px;
 	rotate: 225deg;
-	right: 3px;
+	right: 300px;
+}
+
+.s{
+	position: absolute;
+	bottom: 350px;
+	rotate: -225deg;
+	font-size: 30px;
+	color: #75ff9a;
+	font-family: "sigmar", "serif";
+}
+
+.pare{
+	font-family: "sigmar", "serif";
 }
