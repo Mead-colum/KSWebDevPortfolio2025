@@ -38,22 +38,23 @@ html {
 
 body {
 	
-	background-color: #00301b;
+	
 }
 
 
 #container {
-	text-align: center;
 	
-	width:800px;
-	max-width: 800px;
+	
+	background-color: #00301b;
+	max-width: 700px;
 	margin:auto;
-	
+	height: 950px;
 }
 
 
 
 .My{
+	text-align: center;
 	font-size: 170px;
 	font-family: "danfo", "serif";
 	color: #008223;
@@ -67,7 +68,7 @@ body {
 
 .Big{
 	position: relative;
-	right: 250px;
+	
 	rotate: -45deg;
 	font-family: "danfo","serif";
 	color: #026b1e;
@@ -85,45 +86,67 @@ body {
 
 
 .Fan {
-	position: absolute;
+	position: relative;
 	
 	top: 65%;
-	font-size: 300px;
+	font-size: 150px;
 	font-family: "Black Ops One", serif;
 	color: #75ff9a;
+	
 }
 
 .F{
-	position: absolute;
-	right: 50px;
-	bottom: 100px;
-	rotate: -20deg;
-	
+position: relative;
+	rotate: 25deg;
+	bottom: 150px;
 }
 
 .A{
-	position: absolute;
-	top: 250px;
-	rotate: 315deg;
-	left: 25px;
+	
 }
 
 .N{
-	position: absolute;
-	top: 250px;
-	rotate: 225deg;
-	right: 300px;
+	position: relative;
+	rotate: 25deg;
+	top: 150px;
+	
 }
 
 .s{
 	position: absolute;
-	bottom: 350px;
+	bottom:200px;
 	rotate: -225deg;
-	font-size: 30px;
+	left: 400px;
 	color: #75ff9a;
 	font-family: "sigmar", "serif";
 }
 
-.pare{
+.Mom{
+	position: absolute;
 	font-family: "sigmar", "serif";
+	font-size: 90px;
+	opacity: 0.5;
+	top:100%;
+	rotate: -35deg;
+}
+
+.Dad{
+	position: absolute;
+	font-family: "danfo","serif";
+	font-size: 90px;
+	opacity: 0.5;
+	left: 45%;
+	top:80%;
+	rotate: 35deg;
+}
+
+
+.Dad:hover{
+	color: #75ff9a;
+	font-size: 95px;
+}
+
+.Mom:hover{
+	font-size: 95px;
+	color: #75ff9a;
 }
