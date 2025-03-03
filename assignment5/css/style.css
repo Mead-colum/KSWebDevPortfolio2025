@@ -27,6 +27,10 @@ body {
 	max-width: 800px;	
 	margin:auto;
 	background-color: aqua;
+	animation-name: color;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
 }
 
 @keyframes bounce {
@@ -191,6 +195,15 @@ body {
 	100%{color: violet; rotate: 0deg;}
   }
 
+  @keyframes color {
+	0%{border-color:red; border-radius:0%;}
+	20%{border-color: orange;}
+	40%{border-color: yellow;}
+	60%{border-color: green;}
+	80%{border-color: blue;}
+	90%{border-color: indigo;}
+	100%{border-color: violet; border-radius: 10%;}
+  }
   @keyframes spin-delay{
 	0%{rotate: 0deg; color: purple;}
 	25%{rotate: 60deg;}
