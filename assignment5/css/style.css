@@ -158,8 +158,7 @@ body {
 	animation-name: spin-delay;
 	animation-duration: 2s;
 	animation-iteration-count: infinite; 
-	animation-direction: regular; 
-	 
+	animation-direction: regular; 	 
 	animation-delay: 2s;
   }
 
@@ -200,9 +199,13 @@ body {
 	90%{rotate: 320deg;}
 	100%{rotate:360deg; color: aqua;}
   }
+  @keyframes fall {
+	from {top: 3%; opacity: .9;}
+	to {top: 100%; opacity: .1;}
+  }
 
   #infinity {
-	left: 20%;
+	left: 12%;
 	position: relative;
 	width: 212px;
 	height: 100px;
@@ -240,6 +243,194 @@ body {
 	animation-timing-function: linear;
   }
 
+  
+  #yin-yang-ml{
+	top: 3%;
+	left:40%;
+	width: 96px;
+	box-sizing: content-box;
+	height: 48px;
+	background: #eee;
+	border-color: red;
+	border-style: solid;
+	border-width: 2px 2px 50px 2px;
+	border-radius: 100%;
+	position: absolute;
+	animation-name: fall;
+	animation-duration: 1s;
+	animation-iteration-count: infinite; 
+	animation-direction: regular; 	 
+	animation-play-state: running;
+	
+	
+  }
+  #yin-yang-ml:hover {	
+	animation-play-state:paused;
+  }
+  #yin-yang-ml:before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 0;
+	background: #eee;
+	border: 18px solid red;
+	border-radius: 100%;
+	width: 12px;
+	height: 12px;
+	box-sizing: content-box;
+  }
+  #yin-yang-ml:after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	background: red;
+	border: 18px solid #eee;
+	border-radius: 100%;
+	width: 12px;
+	height: 12px;
+	box-sizing: content-box;
+  }
 
+  #yin-yang-mr{
+	top: 3%;
+	right:40%;
+	width: 96px;
+	box-sizing: content-box;
+	height: 48px;
+	background: #eee;
+	border-color: red;
+	border-style: solid;
+	border-width: 2px 2px 50px 2px;
+	border-radius: 100%;
+	position: absolute;
+	animation-name: fall;
+	animation-duration: 1s;
+	animation-iteration-count: infinite; 
+	animation-direction: regular; 	 
+	animation-delay: .6s;
+	animation-play-state: running;
+  }
+  #yin-yang-mr:hover {	
+	animation-play-state:paused;
+  }
+  #yin-yang-mr:before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 0;
+	background: #eee;
+	border: 18px solid red;
+	border-radius: 100%;
+	width: 12px;
+	height: 12px;
+	box-sizing: content-box;
+  }
+  #yin-yang-mr:after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	background: red;
+	border: 18px solid #eee;
+	border-radius: 100%;
+	width: 12px;
+	height: 12px;
+	box-sizing: content-box;
+  }
+  #yin-yang-r{
+	top: 3%;
+	right:29%;
+	width: 96px;
+	box-sizing: content-box;
+	height: 48px;
+	background: #eee;
+	border-color: red;
+	border-style: solid;
+	border-width: 2px 2px 50px 2px;
+	border-radius: 100%;
+	position: absolute;
+	animation-name: fall;
+	animation-duration: 1s;
+	animation-iteration-count: infinite; 
+	animation-direction: regular; 	 
+	animation-delay: .5s;
+	animation-play-state: running;
+  }
+  #yin-yang-r:hover {	
+	animation-play-state:paused;
+  }
+  #yin-yang-r:before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 0;
+	background: #eee;
+	border: 18px solid red;
+	border-radius: 100%;
+	width: 12px;
+	height: 12px;
+	box-sizing: content-box;
+  }
+  #yin-yang-r:after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	background: red;
+	border: 18px solid #eee;
+	border-radius: 100%;
+	width: 12px;
+	height: 12px;
+	box-sizing: content-box;
+  }
+
+  #yin-yang-l{
+	top: 3%;
+	left:29%;
+	width: 96px;
+	box-sizing: content-box;
+	height: 48px;
+	background: #eee;
+	border-color: red;
+	border-style: solid;
+	border-width: 2px 2px 50px 2px;
+	border-radius: 100%;
+	position: absolute;
+	animation-name: fall;
+	animation-duration: 1s;
+	animation-iteration-count: infinite; 
+	animation-direction: regular; 	 
+	animation-delay: .2s;
+	animation-play-state: running;
+	
+  }
+  #yin-yang-l:hover {	
+	animation-play-state:paused;
+  }
+  #yin-yang-l:before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 0;
+	background: #eee;
+	border: 18px solid red;
+	border-radius: 100%;
+	width: 12px;
+	height: 12px;
+	box-sizing: content-box;
+  }
+  #yin-yang-l:after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	background: red;
+	border: 18px solid #eee;
+	border-radius: 100%;
+	width: 12px;
+	height: 12px;
+	box-sizing: content-box;
+  }
 
 
