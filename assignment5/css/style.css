@@ -9,6 +9,7 @@ html {
 		/* Standard text-settings below */
 	font-size: 1em;
     line-height: 1.4em;
+	background-color: blueviolet;
 }
 
 
@@ -20,66 +21,224 @@ body {
 }
 
 .cont{
-
+	width: 50%;
 	height: 100%;
 	border: 5px solid black;
 	max-width: 800px;	
 	margin:auto;
-	
+	background-color: aqua;
 }
 
 @keyframes bounce {
 	0% {right:50%; width:280px;} 
-	50% {right:75%}
-	100% {right:50%; width: 300px;}
+	50% {right:75%; width: 350px; }
+	100% {right:50%; width: 290px;}
 }
 
 @keyframes bounceshadow {
-	0% {left:50%; width:280px;} 
-	50% {left:75%}
-	100% {left:50%; width: 300px;}
-}
-
-#something {
-	background-color: rgb(6, 77, 59);
-	width: 300px;	
-	height: 300px;
-	border-radius: 50%;
-	position: absolute;
-	right:50%;
-	transition: background 3s, height 1s, transform 5s;
-	animation-name: bounce;
-	animation-duration: 2s;
-	animation-iteration-count: infinite ;
-
+	0% {left:50%; width:280px; } 
+	25% {}
+	40% {}
+	50% {left:75%; width: 350px;}
+	75% {}
+	100% {left:50%; width: 260px;}
 } 
 
-#something:hover{
-	background: rgb(137, 0, 150);
-	height: 500px;
-	transform: translate(0px,800px);
-	
+@keyframes bounceup {
+	0% {bottom:50%; width:160px;} 
+	50% {bottom:75%; width: 250px; }
+	100% {bottom:50%; width: 160px;}
 }
 
+@keyframes bounceupshadow {
+	0% {top:50%; width:160px; } 
+	25% {}
+	40% {}
+	50% {top:75%; width: 250px;}
+	75% {}
+	100% {top:50%; width: 160px;}
+} 
+
+#something {
+	
+	background-color: rgb(6, 77, 59);
+	width: 200px;	
+	height: 200px;
+	left:50%;
+	border-radius: 50%;
+	position: absolute;
+	bottom:50%;
+	transition: background 3s, height 1s, transform 5s;
+	animation-name: bounceup;
+	animation-duration: 1.5s;
+	animation-iteration-count: infinite ;
+	animation-timing-function: ease-in-out;
+} 
+
+
+
 #shadow{
+	max-width: 100%;
 	background-color: black;
-	width: 300px;	
-	height: 300px;
+	opacity: .5;
+	width: 200px;	
+	height: 200px;
+	left:50%;
 	border-radius: 50%;
 	position: absolute;
 	transition: height 1s, transform 5s;
-	left:50%;
-	animation-name: bounceshadow;
-	animation-duration: 2s;
+	top:50%;
+	animation-name: bounceupshadow;
+	animation-duration: 1.5s;
 	animation-iteration-count: infinite ;
+	animation-timing-function: ease-in-out;
 }
 
-#shadow:hover{
+@keyframes pacmove {
+	0%{top: 0%;rotate: 90deg; color: yellow; }
+	25%{top: 25%;rotate: 90deg;}
+	50%{top: 50%; rotate: 90deg;}
+	100%{top: 90%; rotate: 90deg;color: yellow;}
 	
-	height: 500px;
-	transform: translate(0px,800px);
+}	
+
+#pacman {
+	position: relative;
+	width: 0px;
+	height: 0px;
+	border-right: 60px solid transparent;
+	border-top: 60px solid ;
+	border-left: 60px solid ;
+	border-bottom: 60px solid ;
+	border-top-left-radius: 60px;
+	border-top-right-radius: 60px;
+	border-bottom-left-radius: 60px;
+	border-bottom-right-radius: 60px;
+	animation-name: pacmove;
+	animation-direction: alternate;
+	animation-duration: 4s;
+	animation-iteration-count: infinite ;
+	animation-play-state: running;
+  }
+
+  #pacman:hover{
 	
-}
+	animation-name: pacmove;
+	animation-direction: alternate; 
+	animation-duration: 4s;
+	animation-iteration-count: infinite ;
+	animation-play-state: paused;
+  }
+
+  #triangle-up {
+	position: absolute;
+	right: 10%;
+	width: 0;
+	height: 0;
+	border-left: 100px solid transparent;
+	border-right: 100px solid transparent;
+	border-bottom: 150px solid ;
+	animation-name: spin-delay;
+	animation-duration: 2s;
+	animation-iteration-count: infinite; 
+	animation-direction: regular; 
+	 
+	animation-delay: 2s;
+	
+  }
+
+  #triangle-down {
+	position: absolute;
+	left: 10%;
+	width: 0;
+	height: 0;
+	border-left: 100px solid transparent;
+	border-right: 100px solid transparent;
+	border-top: 150px solid ;
+	animation-name: spin-delay;
+	animation-duration: 2s;
+	animation-iteration-count: infinite; 
+	animation-direction: regular; 
+	 
+	animation-delay: 2s;
+  }
+
+  #triangle-left {
+	width: 0;
+	height: 0;
+	border-top: 50px solid transparent;
+	border-right: 100px solid red;
+	border-bottom: 50px solid transparent;
+	animation-name: pacmove;
+	animation-direction: alternate;
+	animation-duration: 4s;
+	animation-iteration-count: infinite ;
+	animation-play-state: running;
+  }
+  
+  @keyframes Spin {
+	0%{rotate: 360deg; color: red;}
+	
+	100%{rotate: 0deg; color: purple;}
+  }
+
+  @keyframes Spincolo {
+	0%{color:red; rotate: 360deg;}
+	20%{color: orange;}
+	40%{color: yellow;}
+	60%{color: green;}
+	80%{color: blue;}
+	90%{color: indigo;}
+	100%{color: violet; rotate: 0deg;}
+  }
+
+  @keyframes spin-delay{
+	0%{rotate: 0deg; color: purple;}
+	25%{rotate: 60deg;}
+	50%{rotate: 180deg;}
+	80%{rotate: 260deg;}
+	90%{rotate: 320deg;}
+	100%{rotate:360deg; color: aqua;}
+  }
+
+  #infinity {
+	left: 20%;
+	position: relative;
+	width: 212px;
+	height: 100px;
+	box-sizing: content-box;
+	animation-name: Spin;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+  }
+  #infinity:before,
+  #infinity:after {
+	content: "";
+	box-sizing: content-box;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 60px;
+	height: 60px;
+	border: 20px solid ;
+	border-radius: 50px 50px 0 50px;
+	transform: rotate(-45deg);
+  }
+  #infinity:after {
+	left: auto;
+	right: 0;
+	border-radius: 50px 50px 50px 0;
+	transform: rotate(45deg);
+  }
+
+  #infinity:hover{
+
+	animation-name: Spincolo;
+	animation-duration: .5s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+  }
 
 
 
