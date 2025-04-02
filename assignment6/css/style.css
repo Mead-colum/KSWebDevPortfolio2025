@@ -17,8 +17,8 @@ html {
 /* Mobile First CSS: we'll design for phone sizes first, then add media queries for larger screens later */
 
 body {
-	background-color: rgb(172, 145, 24);
-	background-image: url("img/OceanView.jpg");
+	background-color: #7E8C99;
+	
 	
 }
 
@@ -27,12 +27,12 @@ header{
 }
 
 #container {
-	background-color: aqua;
+	background-color: #486793;
 	border-radius: 10px;
 	text-align: center;
 	max-width: 50%;
 	margin: auto;
-	
+	height: 100%;
 	max-width: 800px;
 }
 
@@ -42,14 +42,15 @@ main {
 }
 
 section{
+	background-color: #FEF49F;
 	padding: 5px;
 	border: 2px black solid;
 	margin: 5px;
-	max-height: 800px;
+	
 }
 
 #AuthorSect{
-
+	
 	
 }
 #MySect{
@@ -62,6 +63,7 @@ p {
 footer em{	
 	padding: 1px;
 	border-radius: 15px;	
+	
 }
 
 
@@ -79,7 +81,15 @@ You can adjust the min-width numbers below, and add as many new media queries as
 /* Minimum width for laptops. */
 @media all and (min-width: 769px) {
 	
+	body {
 	
+		
+		background: url("../img/OceanView.jpg") repeat top ;
+		background-size: 100%;
+	}
+	#container {
+		max-height: 800px;
+	}
 	
 } /* closes 769px+ */
 
@@ -94,7 +104,7 @@ main{
 	display: flex;
 }
 	
-	
+
 	
 } /* closes 1024px+ */
 
