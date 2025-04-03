@@ -82,9 +82,7 @@ You can adjust the min-width numbers below, and add as many new media queries as
 /* Minimum width for laptops. */
 @media all and (min-width: 769px) {
 	
-	figure{
-		
-	}
+	
 	
 	
 	
