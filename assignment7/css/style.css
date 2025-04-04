@@ -16,7 +16,7 @@ html {
 /* Mobile First CSS: we'll design for phone sizes first, then add media queries for larger screens later */
 
 body {
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: "Montserrat Alternates", Arial, Helvetica, sans-serif;
 	background-color: rgb(91, 104, 61);
 }
 
@@ -129,3 +129,8 @@ figure.responsive iframe {
     height: 100%;
 }
 
+.montserrat-alternates-medium {
+	font-family: "Montserrat Alternates", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+  }
