@@ -104,7 +104,8 @@ You can adjust the min-width numbers below, and add as many new media queries as
 		flex: 1 1 33%;
 	}
 	section,figure{
-		
+		flex: 1 1 33%;
+		order: 1;
 	}
 	figure{
 		flex: 1 1 33%;
@@ -137,21 +138,3 @@ figure.responsive iframe {
 	font-weight: 500;
 	font-style: normal;
   }
-
-  a {
-	color: rgb(50, 170, 179);
-	text-decoration: none;
-	font-size: 1.25em;
-	display: inline-block;
-	background-color: rgba(88, 52, 52, 0.562);
-	padding: 5px;
-	border-radius: 5px;
-	max-height: fit-content;
-}
-
-a:hover {
-	display: inline-block;
-	color: white;
-	background-color: brown;
-
-}
