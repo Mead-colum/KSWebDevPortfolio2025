@@ -104,6 +104,7 @@ You can adjust the min-width numbers below, and add as many new media queries as
 		flex: 1 1 33%;
 	}
 	section,figure{
+		flex: 1 1 33%;
 		
 	}
 	figure{
