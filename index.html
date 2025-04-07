@@ -14,10 +14,34 @@
 
 
 <body>
+	<script>
+
+	document.getElementById("year").innerHTML = new Date().getFullYear();
+
+	alert("Hello wawazands");
+
+	//	document.write("Hello");
+		function Bojangles()
+		{
+			alert("Hello wawazands");
+		}	//Closed function Bojanles
+
+		
+		function BGChange()
+		{
+			document.body.style.background = "purple";
+		} //Closed BGChange
+	</script>
+
+
+
+
 	<div id="container">
  <header>
  <h1> Khalil Stevens </h1>
  <h2> WebDev Portfolio</h2>
+ <button onclick = "Bojangles()">Zamn</button>
+ <button onclick = "BGChange()">Background</button>
  </header>
   
 <nav>
@@ -34,11 +58,10 @@
 	<img src="img/OceanView.jpg" alt="View of the ocean from a boat">
 	<figcaption><em>Taken by khalil stevens</em></figcaption>
 </figure>
-<p>Hello I plan to have each page customized about something I like, be it a game series or tv show <br><em>(it's probably gonna be game series)</em></p>
-<p>Final project Idea, A group going by the 25th fleet believe My dog kobe is a 'Monster' <span class= "ok"> From monster hunter</span> and maybe it starts off with them wanting to find and stop him but it ends with them almost worshipping him, products with his face on them, compound, cultish? nergigante? </p>
-<p>Current Ideas, Monster hunter for The home(this one) page,</p>
+<p><span class= "ok"> Hello!</span> 
 
-<footer><em>&#169; Khalil Stevens 2025</em></footer>
+
+<footer><em>&#169; Khalil Stevens <span id = "year" ></span></em></footer>
 </main>
 
 
