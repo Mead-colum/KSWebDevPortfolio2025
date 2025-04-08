@@ -65,7 +65,9 @@
 		let time = new Date();
 		//this a function wrapper? it allows for multiple functions to be called at once via onload 
 		window.onload = function(){
+			//important so that there's (barely)no delay for showing changes
 			ShowClock();
+			GetSetTime();
 			//this will call show clock every second refreshing the snapshot			
 			setInterval(ShowClock, 1000); 
 			setInterval(GetSetTime,1000);
