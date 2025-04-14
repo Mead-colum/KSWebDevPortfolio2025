@@ -37,6 +37,8 @@ section{
 	text-align: center;
 	border: 1px black solid;
 }
+
+
 #Pop{
 	font-family: "Poppins", sans-serif;
 	font-weight: 700;
@@ -125,6 +127,10 @@ a:hover {
 
 @media all and (min-width: 1024px) {
 	
+	#center img{
+		width: 500px;
+		height: 500px;
+	}
 	section{
 		flex-basis: 33%;
 	}
