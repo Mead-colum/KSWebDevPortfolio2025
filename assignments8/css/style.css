@@ -1,0 +1,158 @@
+/* Basic CSS resets -- leveling slight inconsistencies in browsers */
+html, body {
+	margin:0px;
+	padding:0px;
+	height:100%;
+}
+
+html {
+		/* Standard text-settings below */
+	font-size: 1em;
+    line-height: 1.4em;
+}
+
+
+
+/* Mobile First CSS: we'll design for phone sizes first, then add media queries for larger screens later */
+
+body {
+	font-family: "Montserrat Alternates", Arial, Helvetica, sans-serif;
+	background-color: rgb(91, 104, 61);
+}
+
+
+#container {
+	margin: auto;
+	text-align: center;
+	max-height: 50%;
+	max-width: 80%;
+
+}
+
+#PgTitle{
+	background-color: black;
+/*	border-start-start-radius: 30px;
+	border-top-right-radius: 30px; */
+	
+	color: white;
+	padding: 10px;
+}
+
+
+main{
+	padding: 10px;
+	background-color: rgb(61, 102, 104);
+}
+#FinalTxt{
+	padding: 5px;
+	background-color: bisque;
+	border: 2px black solid;
+}
+figure{
+	padding: 5px;
+	max-height: fit-content;
+	border-radius: 5%;
+	background-color: rgb(36,36,36);
+}
+figure img{
+	
+	border-radius: 10%;
+	width: 100%;	
+}
+figcaption{
+	color: white;
+}
+
+footer{	
+	color: white;
+	padding: 1em;
+	background-color: black;
+}
+
+
+
+
+/* ========================================
+MEDIA QUERIES!
+You can adjust the min-width numbers below, and add as many new media queries as you need.
+======================================== */
+
+
+
+/* Minimum width for laptops. */
+@media all and (min-width: 769px) {
+	
+	
+	
+	
+	
+} /* closes 769px+ */
+
+
+
+
+/* Minimum width for desktop screens. */
+@media all and (min-width: 1024px) {
+	
+	main{
+	
+		display: flex;
+		
+	}
+
+	section{
+		flex: 1 1 33%;
+	}
+	section,figure{
+		flex: 1 1 33%;
+		
+	}
+	figure{
+		flex: 1 1 33%;
+	}|
+	figure img{
+		align-items: center;
+	}
+	
+	
+} /* closes 1024px+ */
+
+figure.responsive {
+    position: relative;
+    padding-bottom: 56.25%;  /* 16:9 */
+    height: 0px;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+figure.responsive iframe {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.montserrat-alternates-medium {
+	font-family: "Montserrat Alternates", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+  }
+
+  a {
+	color: rgb(50, 170, 179);
+	text-decoration: none;
+	font-size: 1.25em;
+	display: inline-block;
+	background-color: rgba(88, 52, 52, 0.562);
+	padding: 5px;
+	border-radius: 5px;
+	max-height: fit-content;
+}
+
+a:hover {
+	display: inline-block;
+	color: white;
+	background-color: brown;
+
+}
