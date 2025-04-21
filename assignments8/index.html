@@ -23,18 +23,23 @@
 </header>
 
 <main>
-  <button id="FirstB">Show hidden</button>
+<section id="buttons">
+  	<button id="FirstB">Show hidden</button>
+  	<button id="SecondB">Show hidden photo</button>
+  	<button id="LastB">Show hidden Video</button>
+</section>
+  <Section id="content">
+	<p id=DisText>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
+  	At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
+	</p>
+	
+	<figure id="Boots"><img src="img/Boots.jpg" alt="cute dog"></figure>
+		
+	<figure class = "responsive">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/tGlUZWNjxPA?si=DL4B2jGZvNCTvz3O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+	</figure>
+</Section>
 
-
-<p id=DisText>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
-  At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
-</p>
-  <button id="SecondB">Show hidden photo</button>
-<figure id="Boots"><img src="img/Boots.jpg" alt="cute dog"></figure>
-	<button id="LastB">Show hidden Video</button>
-<figure class = "responsive">
-	<iframe width="560" height="315" src="https://www.youtube.com/embed/tGlUZWNjxPA?si=DL4B2jGZvNCTvz3O" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</figure>
 </main>
 
 
@@ -57,19 +62,20 @@
   //  $('p#Magicee').show();
 //  $('p#Magicee').slideDown(200);
   $('p#DisText').slideToggle(1000);
+  
   });//close. First click    
 
 
   $('button#SecondB').click(function(){
-
-    $('figure#Boots').slideToggle(2000);
-    
-
+	$('figure#Boots').fadeToggle(1000);
+   
+	$('div#container').toggleClass("growth")
   });//close second click
 
   $('button#LastB').click(function(){
 
 	$('figure.responsive').slideToggle(3000)
+
   });//lastbbutton close  
 
   }); //close .ready()

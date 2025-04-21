@@ -108,20 +108,28 @@ a {
 }
 
 a:hover {
-	color:rgb(82, 170, 170);
+/*	color:rgb(82, 170, 170);
 	border-left: 2px rgb(82, 170, 170) solid;
 	border-right: 2px rgb(82, 170, 170) solid;
 	padding-left: 10px;
 	padding-right: 10px;
-	opacity: 65% ;
+	opacity: 65% ; */
+	animation: vanish .5s ;
+	animation-direction: alternate;
+	animation-iteration-count: infinite;
 }
 
 @keyframes vanish {
-	0%{ opacity: 75% ; }
-	
-	50%{ opacity: 50% ;}
+	0%{ color:rgb(82, 170, 170)}	
 
-	100%{ opacity: 65%;}
+	100%{ color:rgb(82, 170, 170);
+		border-left: 2px rgb(82, 170, 170) solid;
+		border-right: 2px rgb(82, 170, 170) solid;
+		padding-left: 10px;
+		padding-right: 10px;
+		opacity: 65% ;
+		
+	}
 }
 
 
