@@ -9,7 +9,7 @@ html {
 		
 	font-size: 1em;
     line-height: 1.4em;
-	height: 3000px;
+	
 }
 
 
@@ -21,39 +21,39 @@ body {
 	background-color: rgb(237,237,237);
 }
 
-header{
+#Pgtitle{
+	background-color: rgb(38, 70, 83);
 	display: flex;
+	flex-direction: column;
+	
+}
+#Pgtitle header{
+	display: flex;
+	line-height:24px;
 	height: 50px;
 	justify-content: flex-start;
 	align-items: center;
-	max-lines: 1;
 	font-size: 22px;	
 	
 }
 
 header figure {
 	height: 100%;	
-	
+	padding: 5px;
 	margin: 5px;
 }
 
-#Pgtitle{
-	
-
-	
-	background-color: rgb(38, 70, 83);
-}
 main{
 	
 }
 
 nav ul{
-	position: sticky;
+
 	list-style: none;
 	display: flex;	
 	justify-content: space-between;
 	padding: 7px;
-	font-size: 14px;
+	font-size: 12px;
 	margin: 0px;
 }
 
@@ -72,6 +72,36 @@ img{
 	height: 100%;
 	width: 100%;
 }
+#leftSection figure img, #rightSection figure img{
+	max-width: 140px;
+}
+section figure img{
+	
+}
+#displayText{
+	padding: .1px;
+	color:rgb(38, 70, 83);
+	background-color:  rgb(191, 191, 130);
+}
+#displayText strong{
+	color:rgb(82, 170, 170);
+}
+#displaySection{
+	font-size: 30px;
+	line-height: 2rem;
+}
+#displaySection header{
+	padding: 5px;
+}
+#displaySection section{
+	text-align: center;
+}
+#displaySection figure{
+	margin: auto;
+	max-height: 500px;
+	max-width: 500px;
+}
+
 #bottomSection{
 	text-align: center;
 	margin: auto;
@@ -79,48 +109,75 @@ img{
 	
 }
 
+#bottomSection a{
+	
+}
+
 #bottomSection section{
-	padding: .1px;
+	padding: 15px;
 	margin: 5px;
-	background-color:  rgb(191, 191, 130);
+	max-height: fit-content;
+}
+
+#bottomSection section p{
+	
+	
+
 }
 
 
-section #middleSection{
+
+#leftSection{
+	border-bottom: 2px rgb(191, 191, 130) solid;
+}
+
+
+#middleSection section {
+	border-bottom: 2px rgb(191, 191, 130) solid;
 	background-color: rgb(237,237,237);
+	
+}
+#middleSection figure{
+	max-width: 400px;
+	max-height: 400px;
+	margin: auto;
+		
+	}
+
+#rightSection{
+	border-bottom: 2px rgb(191, 191, 130) solid;
 }
 
 #container {
-
-	
     background-color: rgb(237, 237, 237);	
 	font-family: "Montserrat", sans-serif;
 }
 
 a {
-	color: rgb(191, 191, 130);
-	
+	color: rgb(191, 191, 130);	
 	text-decoration: none;
 	font-size: 1.25em;
 	display: inline-block;
 	border-left: 2px rgb(191, 191, 130) solid ;
 	border-right: 2px rgb(191, 191, 130) solid ;
-	padding: 5px;
-	
+	padding: 5px;	
 	max-height: fit-content;
 	align-self: center;
 }
 
 a:hover {
 	/*	color:rgb(82, 170, 170); */
-		animation: linkAnim .5s ;	
+		animation: linkAnim .1s ;	
 		animation-fill-mode: forwards;
 }
 
 
 footer{
-padding: 5px;
-
+	position: fixed;
+	padding: 5px;
+	box-sizing: border-box;
+	width: 100%;
+	bottom: 0px;
 }
 		
 figcaption, footer{
@@ -166,7 +223,11 @@ You can adjust the min-width numbers below, and add as many new media queries as
 /* Minimum width for laptops. */
 @media all and (min-width: 769px) {
 	
-	
+	nav ul{
+		font-size: 26px;
+		justify-content: space-around;
+		
+	}
 	
 	
 } /* closes 769px+ */
@@ -177,11 +238,69 @@ You can adjust the min-width numbers below, and add as many new media queries as
 /* Minimum width for desktop screens. */
 @media all and (min-width: 1024px) {
 	
-	
+	a:hover {
+		/*	color:rgb(82, 170, 170); */
+			animation: linkAnim .5s ;	
+			animation-fill-mode: forwards;
+	}
+	nav ul{
+		font-size: 26px;
+		justify-content: space-around;
+		
+	}
+
+	#Pgtitle{
+		margin: auto;
+		max-width: 60%;
+		height: 100px;
+		justify-content: center;
+	}
+
+	#Pgtitle header{
+		
+	}
+
+
+	#bottomSection{
+		display: flex;
+		justify-content: space-evenly;
+	}
+	#leftSection{
+		order:0;
+		flex-basis: 20%;
+	}
+	#middleSection{
+		flex-basis: 60%;
+		order: 1;
+	}
+	#middleSection figure{
+		height: 300px;
+		width: 300px;
+		margin: auto;
+			
+		}
+	#rightSection{
+		flex-basis: 20%;
+		order: 2;
+	}
 	
 	
 } /* closes 1024px+ */
 
+figure.responsive {
+	position: relative;
+	padding-bottom: 56.25%;  /* 16:9 */
+	height: 0px;
+	overflow: hidden;
+	max-width: 100%;
+}
+figure.responsive iframe {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+}
 .poppins-bold {
 	font-family: "Poppins", sans-serif;
 	font-weight: 700;
