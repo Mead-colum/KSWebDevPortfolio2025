@@ -40,37 +40,69 @@
 	</div>
 
 	<main>
-		<section id="topSection">
+		
 			<section Id="displaySection"> 
 				
 				
 				<section id = "displayText">
-					<header>It was <strong>fate</strong> that brought you here.</header>
+					<header>Push your dog <strong>further.</strong></header>
 					<figure><img src="img/WebLogoGradi.png" alt="Web Logo"></figure> 
-					
-					<p><strong>Life</strong> is arduous.<br> But it is through <strong>love</strong> we will find the key to <strong>peace.</strong></p>
-					<p>Yes <strong>fate</strong> brings you here.<br> And it is up to you to act.</p>			
+					<p><strong>A Dog's Love</strong></p>
 				</section>	
 
 
 			</section>
-			<section></section>
+			
 
-		</section>
+		
 
 		<section id="bottomSection">
-				<section id = "middleSection">
-					<!-- Where most content will go -->		
-					
-					<section >
-						<h2>Our Founder</h2>
-						<figure><img src="img/ADL-Navy.png" alt = "The founder"></figure>
-						<p>Our founder <strong>Kobe J. Stevens</strong> is a god among dogs</p>
-						<a href="">Members Page</a>
-	
+				<section id = "shopSection">
+					<section class="shopRow">	
+						<section>
+							<h2>Cogni-Bone</h2>
+							<figure><img src="img/DogToy.png" alt = "The founder"></figure>
+							<p>Our founder <strong>Kobe J. Stevens</strong> is a god among dogs</p>
+							<a onclick = "memberPopup()">Learn More</a>
+						</section>
+
+						<section>
+							<h2>Cogni-Bone</h2>
+							<figure><img src="img/DogToy.png" alt = "The founder"></figure>
+							<p>Our founder <strong>Kobe J. Stevens</strong> is a god among dogs</p>
+							<a onclick = "memberPopup()">Learn More</a>
+						</section>
 					</section>
+					<section class="shopRow">	
+						<section>
+							<h2>Cogni-Bone</h2>
+							<figure><img src="img/DogToy.png" alt = "The founder"></figure>
+							<p>Our founder <strong>Kobe J. Stevens</strong> is a god among dogs</p>
+							<a onclick = "memberPopup()">Learn More</a>
+						</section>
 
+						<section>
+							<h2>Cogni-Bone</h2>
+							<figure><img src="img/DogToy.png" alt = "The founder"></figure>
+							<p>Our founder <strong>Kobe J. Stevens</strong> is a god among dogs</p>
+							<a onclick = "memberPopup()">Learn More</a>
+						</section>
+					</section>
+					<section class="shopRow">	
+						<section>
+							<h2>Cogni-Bone</h2>
+							<figure><img src="img/DogToy.png" alt = "The founder"></figure>
+							<p>Our founder <strong>Kobe J. Stevens</strong> is a god among dogs</p>
+							<a onclick = "memberPopup()">Learn More</a>
+						</section>
 
+						<section>
+							<h2>Cogni-Bone</h2>
+							<figure><img src="img/DogToy.png" alt = "The founder"></figure>
+							<p>Our founder <strong>Kobe J. Stevens</strong> is a god among dogs</p>
+							<a onclick = "memberPopup()">Learn More</a>
+						</section>
+					</section>
 				</section>
 					
 				<section id="leftSection">					
@@ -86,12 +118,13 @@
 						<a href="about-us.html">Learn More</a>
 					</section>
 				</section>
+
 				
 				<section id="rightSection">
 					<h2>Advance your Pet!</h2>
-					<figure><img src="img/DogToy.png" alt = "dog toy"></figure>
-					<p>Our toys are sure to help your dog as they make their journey to <strong>Godhood</strong></p>
-					<a href="">Shop Now</a>
+					<figure><img src="img/boots.jpg" alt = "dog toy"></figure>
+					<p>Join our community and help your dog achieve <strong>Godhood</strong>.</p>
+					<a href="members.html">Members Page</a>
 				</section>
 
 
@@ -106,6 +139,10 @@
 		GetSetYear();
 	}
 
+function memberPopup(){
+	alert("--This selection is unavailable for non members--\nPlease go to the members page and sign/log in ");
+
+}
 
 function GetSetYear (){
 	document.getElementById("year").innerHTML = new Date().getFullYear();
