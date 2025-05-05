@@ -39,7 +39,8 @@ body {
 }
 
 header figure {
-	height: 100%;	
+	height: 100%;
+	max-width: fit-content;	
 	padding: 5px;
 	margin: 5px;
 }
