@@ -25,7 +25,8 @@ body {
 	background-color: rgb(38, 70, 83);
 	display: flex;
 	flex-direction: column;
-	
+	position: sticky;
+	top: 0px;
 }
 #Pgtitle header{
 	display: flex;
@@ -206,6 +207,7 @@ a {
 
 p.quote{
 	border: 1px rgb(191, 191, 130) solid;
+	padding: 5px;
 	border-radius: 20px;
 	opacity: 50%;
 	margin: auto;
@@ -279,9 +281,9 @@ You can adjust the min-width numbers below, and add as many new media queries as
 	nav ul{
 		font-size: 26px;
 		justify-content: space-around;
-		
 	}
 
+	
 } /* closes 769px+ */
 
 
@@ -314,7 +316,30 @@ You can adjust the min-width numbers below, and add as many new media queries as
 		
 	}
 
-
+	.Monial{
+		display: flex;
+		
+	}
+	#Tesitmonial section{
+		padding: 10px;
+		border-radius: 10px;
+		color: rgb(191, 191, 130) ;
+		background-color:rgb(38, 70, 83) ;
+	}
+	#Tesitmonial img{
+		border-radius: 10px;
+	}
+	.Monial figure img{
+		
+		max-height: 250px;
+		
+	}
+	.Monial figure{
+		flex: 50% ;
+	}
+	.Monial p{
+		flex-basis: 50%;
+	}
 	#bottomSection{
 		display: flex;
 		justify-content: space-evenly;
