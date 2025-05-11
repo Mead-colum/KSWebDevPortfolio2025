@@ -206,6 +206,16 @@ a {
 	align-self: center;
 }
 
+footer a{
+	color:rgb(82, 170, 170);
+	border: none;
+}
+
+footer a:hover{
+	animation: none;
+	border: none;
+}
+
 p.quote{
 	border: 1px rgb(191, 191, 130) solid;
 	padding: 5px;
@@ -223,15 +233,13 @@ a:hover {
 }
 
 
-footer{
+		
+ footer{
 	position: sticky;
 	padding: 5px;
 	box-sizing: border-box;
 	width: 100%;
 	bottom: 0px;
-}
-		
-figcaption, footer{
 	font-size: 0.75em;	
 	text-align: center;
 	background-color: rgb(38, 70, 83);
@@ -243,6 +251,19 @@ footer em, figcaption em {
 	border-radius: 5px;
 	
 }
+
+figcaption{
+	font-size: 0.75em;	
+	text-align: center;
+	color: rgb(38, 70, 83);
+}
+
+#displayText figcaption{
+	font-size: 0.75em;	
+	text-align: center;
+	color: rgb(38, 70, 83);
+}
+
 
 @keyframes linkAnim {
 	0%{ color:rgb(82, 170, 170);
